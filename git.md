@@ -140,3 +140,9 @@ Footer:
 
 - (optional) BREAKING CHANGE: 紀錄不相容的變動，描述變動的原因、migration
 ```
+## Reference
+
+- [Git Internals - Git Objects](https://youtu.be/MyvyqdQ3OjI?si=OxZ0ZUuwOGfdFc4V)
+- [Git Internals - Branches](https://youtu.be/mhZQRBp8dXE?si=yWs4vdTM1aXEYRTX)
+- [什麼是Git物件?](https://medium.com/@flyotlin/什麼是git物件-ebbeb3b22f9c)
+- [Git Commit Message 到底怎麼寫才優美?](https://medium.com/@1chooo/git-commit-message-到底怎麼寫才優美-5b789157b549)
