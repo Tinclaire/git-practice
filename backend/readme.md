@@ -23,11 +23,11 @@
     2. 使用 `process.env.PORT` 來存取環境變數
 
 ### 哪些檔案不該被放上 github repo
-- **機密或敏感資料：**如 API key、密碼、資料庫連接等，這些應放入 `.env` 等環境變數文件中，並加入 `.gitignore` 中，防止意外上傳。
-- **node_modules/：**這類檔案通常很龐大且可以透過 `npm install` 重新產生，因此不必上傳至 github repo 中，避免浪費空間和增加不必要的版控。
-- **Log 檔案：**開發過程中產生的 log 檔案，通常是為了追蹤執行狀態，與實際程式碼無直接關聯。
+- **機密或敏感資料：** 如 API key、密碼、資料庫連接等，這些應放入 `.env` 等環境變數文件中，並加入 `.gitignore` 中，防止意外上傳。
+- **node_modules/：** 這類檔案通常很龐大且可以透過 `npm install` 重新產生，因此不必上傳至 github repo 中，避免浪費空間和增加不必要的版控。
+- **Log 檔案：** 開發過程中產生的 log 檔案，通常是為了追蹤執行狀態，與實際程式碼無直接關聯。
 
-**結論：**上傳 github repo 的時候，應避免上傳敏感資訊、可以自行產生的 dependencies、臨時性的紀錄檔案、與程式碼無關的檔案。
+**結論：** 上傳 github repo 的時候，應避免上傳敏感資訊、可以自行產生的 dependencies、臨時性的紀錄檔案、與程式碼無關的檔案。
 
 ### CJS vs ESM
 - CJS - CommonJS
@@ -81,16 +81,24 @@
     ```
     
     - GET
-        ```curl -X GET "http://www.example.com/api/resources"```
+        ```
+        curl -X GET "http://www.example.com/api/resources"
+        ```
         
     - POST
-        ```curl -X POST -H "Content-Type: application/json" -d '{"status" : false, "name" : "Jack"}' "http://www.example.com/api/resources"```
+        ```
+        curl -X POST -H "Content-Type: application/json" -d '{"status" : false, "name" : "Jack"}' "http://www.example.com/api/resources"
+        ```
         
     - PUT
-        ```curl -X PUT -H "Content-Type: application/json" -d '{"status" : false }' "http://www.example.com/api/resources"```
+        ```
+        curl -X PUT -H "Content-Type: application/json" -d '{"status" : false }' "http://www.example.com/api/resources"
+        ```
         
     - DELETE
-        ```curl -X DELETE "http://www.example.com/api/resources/1"```
+        ```
+        curl -X DELETE "http://www.example.com/api/resources/1"
+        ```
 
 ### Reference
 - [dependencies 與devDependencies 的區別](https://dotblogs.com.tw/gra/2018/01/15/224301)
