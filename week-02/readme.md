@@ -20,6 +20,16 @@
             - `npm install`: 會安裝 `package.json` 下的所有 module
             - `npm install <package> --save`: 會安裝這個 package 並寫進 `package.json`
             - `npm start`: 會執行在 `package.json` 中 `scripts` 底下的 `start` (通常是 `node index.js`)
+- **Why we need nvm & npm**
+    - nvm:
+        - 不同專案可能使用不同版本，透過 nvm 能夠快速切換版本
+        - 支援全局管理，不需要反覆修改環境變數
+        - 可以避免版本衝突
+        - 安裝或更新版本更方便，省去手動管理的麻煩
+    - npm:
+        - 一次性安裝、更新、解安裝上千個 package，dependencies 會自動記錄在 `package.json` 裡，不需手動管理
+        - 可以對 package 進行版控
+        - 透過 `scripts` 快速執行指令，提升開發效率
 
 - **Reference**
     - [安裝 nvm 環境，Node.js 開發者必學（Windows、Mac 均適用）](https://www.casper.tw/development/2022/01/10/install-nvm/)
