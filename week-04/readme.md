@@ -1,12 +1,12 @@
 # week-04
-1. ## Public IP
+## 1. Public IP
 43.207.152.234
 
-2. ## instance type
+## 2. instance type
 可以依照需求，選擇不同的 instance type。
 每個 instance type 有不同的 CPU、記憶體、storage、bandwidth 的 hardware 配置。
 
-3. ## Nginx
+## 3. Nginx
 Nginx 是開源的 web server
 
 ### 用途：
@@ -20,7 +20,7 @@ Nginx 是開源的 web server
 - 記憶體消耗低
 - 支援 Gzip 和 cache，減少 data 大小、縮短傳遞時間
 
-4. ## pm2
+## 4. pm2
 - 一個 node 的 process manager
 - 功能
   - 自動重啟
@@ -29,7 +29,7 @@ Nginx 是開源的 web server
   - 多 process，可提升處理 request 的速度
   - `pm2 monit` 監控 process，提供重啟次數、cpu 用量、memory 用量等多種資訊
 
-5. ## Proxy
+## 5. Proxy
 - **Forward Proxy**
   - send request: client -> Forward Proxy -> server
   - 隱藏 client 的 IP，server 不會知道 request 從哪裡來
@@ -42,7 +42,7 @@ Nginx 是開源的 web server
   - 資訊安全: 避免外部直接攻擊 servers
   - caching
 
-6. ## nginx.conf
+## 6. nginx.conf
 ```
  server {
         listen 80;
@@ -60,13 +60,13 @@ Nginx 是開源的 web server
         }
 }
 ```
-7. ## Security Group
+## 7. Security Group
 - 虛擬防火牆
 - 控制 EC2 的傳入和傳出
 - inbound default: deny all
 - 需要設定 type (HTTP, UDP...), protocol, port range, IP...
 
-8. ## What is sudo? When should we use sudo?
+## 8. What is sudo? When should we use sudo?
 ### sudo = Super User DO
 當加了 **sudo** 在指令前面，表示這個指令是 **root user** 執行的
 
@@ -76,7 +76,7 @@ Nginx 是開源的 web server
   - 改系統設定
   - install or uninstall
 
-9. ## Nginx log
+## 9. Nginx log
 ### 我在 nginx.conf 裡看到：
 - error_log /var/log/nginx/error.log
 - access_log /var/log/nginx/access.log
@@ -93,7 +93,7 @@ Nginx 是開源的 web server
     ```bash
     less /var/log/nginx/access.log
     ```
-10. ## Problem
+## 10. Problem
 無
 
 ## 設置過程
