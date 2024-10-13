@@ -33,7 +33,7 @@ export default class Stack {
 
     // 檢查 stack 是否為空
     isEmpty() {
-        return this.#items.length === 0 ? true : false;
+        return this.#items.length === 0;
     }
 
     // 回傳 stack 中元素的個數
